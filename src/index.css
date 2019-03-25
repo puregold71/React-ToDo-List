@@ -12,3 +12,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 300px;
+  min-width: 250px;
+  height: auto;
+  min-height: 300px;
+  box-shadow: 0 3px 10px #333;
+}
+.inputStyle {
+ margin: 20px auto;
+}
+input[type="text"] {
+  margin: 8px 6px 20px 20px
+}
+input[type="checkbox"] {
+  margin: 0 5px 6px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  visibility: hidden;
+  position: relative;
+  top: -4px;
+  left: 0;
+
+
+}
+input[type=checkbox]:after {
+    content: "\2714";
+    background-color: #fff;
+    display: inline-block;
+    color: #ccc;
+    visibility: visible;
+    border: 1px solid purple;
+    padding: 0 1px;
+    box-shadow: 1px 1px 1px #333;
+}
+
+input[type=checkbox]:checked:after {
+    content: "\2714";
+    font-weight: bold;
+    color: purple
+}
+input + label {
+   font-weight: bold;
+}
+
+span {
+  margin-left: 10px;
+}
